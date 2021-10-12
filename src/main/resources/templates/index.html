@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Spring Boot Thymeleaf Web Application</title>
+</head>
+<body>
+<div th:replace="/fragments/nav :: header" />
+
+
+<div class="container">
+<h1> WELCOME TO LYRNER PLATFORM  </h1>
+<h2>Sudden looked elinor off gay estate nor silent</h2><p>In on announcing if of comparison pianoforte projection. Maids hoped gay yet bed asked blind dried point. On abroad danger likely regret twenty edward do. Too horrible consider followed may differed age. An rest if more five mr of. Age just her rank met down way. </p>
+    <button type="button" th:onclick="|window.location.href='/courses'|" class="btn home-btn btn-dark"> Find my course </button>
+</div>
+
+
+<div th:replace="/fragments/footer :: footer"/>
+
+<script src="https://kit.fontawesome.com/0dc8228a52.js" crossorigin="anonymous"></script>
+</body>
+</html>
