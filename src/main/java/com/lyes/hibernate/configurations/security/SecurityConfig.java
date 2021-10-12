@@ -29,7 +29,9 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .anyRequest().authenticated()
                 .and()
                 .csrf().disable()
-                .rememberMe();
+                .rememberMe()
+                .tokenValiditySeconds(7 * 24 * 60 * 60)
+                .key("AbcdefghiJklmNoPqRstUvXyz");
     }
 
     @Override
